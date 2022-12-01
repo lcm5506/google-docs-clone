@@ -10,11 +10,11 @@ export default function TextEditor() {
   const [quill, setQuill] = useState();
   const { id: documentId } = useParams();
   const [lastSaved, setLastSaved] = useState();
-  const SAVE_INTERVAL = 10000;
+  const SAVE_INTERVAL = 5000;
 
   // handles socket.io connection.
   useEffect(() => {
-    const s = io("http://localhost:3001");
+    const s = io("http://localhost:5000");
     setSocket(s);
     return () => s.disconnect();
   }, []);
@@ -92,6 +92,7 @@ export default function TextEditor() {
   useEffect(() => {
     if (quill == null || socket == null) return;
     const interval = setInterval(() => {
+      console.log(quill.root.innerHTML);
       socket.emit("save-document", quill.getContents());
       let savedDate = new Date();
       setLastSaved(savedDate.toLocaleTimeString("en-US"));

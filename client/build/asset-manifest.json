@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projects/Google%20Docs%20Clone/static/css/main.476e9727.css",
+    "main.js": "/projects/Google%20Docs%20Clone/static/js/main.35ddfb57.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/projects/Google%20Docs%20Clone/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/projects/Google%20Docs%20Clone/index.html",
+    "main.476e9727.css.map": "/projects/Google%20Docs%20Clone/static/css/main.476e9727.css.map",
+    "main.35ddfb57.js.map": "/projects/Google%20Docs%20Clone/static/js/main.35ddfb57.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/projects/Google%20Docs%20Clone/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.476e9727.css",
+    "static/js/main.35ddfb57.js"
+  ]
+}
